@@ -4,7 +4,7 @@ lsof -nP -iTCP:$PORT | grep LISTEN
 Search text inside files:
 grep -r 'text goes here' path_goes_here
 
-List of installed Java:
+set default Java:
 # which java versions installed
 $ /usr/libexec/java_home -V 
 # set the new default version
