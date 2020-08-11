@@ -1,1 +1,3 @@
 
+Find the image's layers and their sizes:
+$ docker history --no-trunc <Image ID>
