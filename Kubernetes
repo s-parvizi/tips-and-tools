@@ -1,1 +1,2 @@
-
+kubectl get pods --all-namespaces | grep -i <keyword>
+kubectl exec -it <podname> bash -n platform
