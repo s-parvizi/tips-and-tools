@@ -23,5 +23,5 @@ CTRL + Z — Suspend/stop current foreground process
 
 macOS Shortcuts:
 ========================================================================================
-ALT + CMD  - Dock
-CTRL + CMD - Dictionary
+ALT + CMD + D  - Hide/Show Dock
+CTRL + CMD + D - Dictionary
