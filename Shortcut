@@ -10,7 +10,7 @@ CTRL + U —(zsh) If you're using the zsh, this will clear the entire line
 CTRL + K — Clear the characters on the line after the current cursor position
 CTRL + Q — Re-enable screen output
 CTRL + L — Clear screen
-CMD  + K - Clear screen
+CMD  + K — Clear screen
 CTRL + R — Search history
 CTRL + G — Escape from search mode
 CTRL + - — Undo the last change
@@ -23,5 +23,10 @@ CTRL + Z — Suspend/stop current foreground process
 
 macOS Shortcuts:
 ========================================================================================
-ALT + CMD + D  - Hide/Show Dock
-CTRL + CMD + D - Dictionary
+ALT + CMD + D  — Hide/Show Dock
+CTRL + CMD + D — Dictionary
+
+
+Intellij Shortcuts:
+========================================================================================
+Alt+Cmd+Shift+Left/Right — Move Element Left/Right
