@@ -30,3 +30,5 @@ CTRL + CMD + D — Dictionary
 Intellij Shortcuts:
 ========================================================================================
 Alt+Cmd+Shift+Left/Right — Move Element Left/Right
+Ctrl + G — Select/unselect the next occurrence
+Ctrl + Cmd + G — Select all occurrences
