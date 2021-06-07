@@ -32,5 +32,7 @@ Intellij Shortcuts:
 Alt+Cmd+Shift+Left/Right — Move Element Left/Right
 Ctrl + G — Select/unselect the next occurrence
 Ctrl + Cmd + G — Select all occurrences
-Fn + ⌘ + Right Arrow to go the end of the file.
+Fn + ⌘ + Right - Arrow to go the end of the file.
+Alt + Space - Quick Definition
+Ctrl + J - Quick Documentation
 Fn + ⌘ + Left Arrow to go the beginning of the file.
