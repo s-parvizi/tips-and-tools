@@ -34,8 +34,8 @@ Alt+Cmd+Shift+Left/Right — Move Element Left/Right
 Ctrl + G — Select/unselect the next occurrence
 Ctrl + Cmd + G — Select all occurrences
 Fn + Cmd + Right - Arrow to go the end of the file.
-Ctrl + H - show hierarchy
 Fn + Cmd + Left Arrow to go the beginning of the file.
+Ctrl + H - show hierarchy
 Alt + Space - Quick Definition
 Ctrl + J - Quick Documentation
 Cmd + E - Recent Files
