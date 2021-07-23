@@ -25,7 +25,8 @@ macOS Shortcuts:
 ========================================================================================
 ALT + CMD + D  — Hide/Show Dock
 CTRL + CMD + D — Dictionary
-
+CMD + TAB / CMD + SHIFT + TAB - forward and backward through your open applications
+CMD + ~ - Shift between different instances of one app
 
 Intellij Shortcuts:
 ========================================================================================
