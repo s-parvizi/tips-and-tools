@@ -1,0 +1,54 @@
+PostgreSQL:
+
+Find version:
+SELECT version();
+
+==============================================================================================================================
+
+PostgreSQL Describe Table:
+SELECT 
+   table_name, 
+   column_name, 
+   data_type 
+FROM 
+   information_schema.columns
+WHERE 
+   table_name = 'table_name';
+
+==============================================================================================================================
+
+Constraints on a table:
+SELECT con.*
+       FROM pg_catalog.pg_constraint con
+            INNER JOIN pg_catalog.pg_class rel
+                       ON rel.oid = con.conrelid
+            INNER JOIN pg_catalog.pg_namespace nsp
+                       ON nsp.oid = connamespace
+       WHERE nsp.nspname = '<schema name>'
+             AND rel.relname = '<table name>';
+
+==============================================================================================================================
+
+List indexes within a specific schema:
+SELECT
+    tablename,
+    indexname,
+    indexdef
+FROM
+    pg_indexes
+WHERE
+    schemaname = 'public'
+ORDER BY
+    tablename,
+    indexname;
+
+==============================================================================================================================
+
+Show Indexes of a table:
+SELECT
+    indexname,
+    indexdef
+FROM
+    pg_indexes
+WHERE
+    tablename = 'table_name';
