@@ -52,3 +52,10 @@ FROM
     pg_indexes
 WHERE
     tablename = 'table_name';
+
+==============================================================================================================================
+
+Get execution time of PostgreSQL query:
+
+EXPLAIN ANALYZE
+Query
