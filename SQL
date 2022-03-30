@@ -69,3 +69,18 @@ select schemaname as table_schema,
 from pg_catalog.pg_statio_user_tables
 order by pg_relation_size(relid) desc;
 
+==============================================================================================================================
+Terminate (kill) specific session in PostgreSQL database:
+
+Find session ID (pid)
+First we will identify the session we want to end. We do it by listing all sessions on the server with this query:
+
+select * from pg_stat_activity;
+
+Kill session
+Now we will use process ID (pid) to kill the session:
+
+select pg_terminate_backend(pid) 
+from pg_stat_activity
+where pid = 'pid';
+
