@@ -21,3 +21,36 @@ dscacheutil -q user | grep -A 3 -B 2 -e uid:\ 5'[0-9][0-9]'
 
 Which shell my terminal is using:
 echo $0
+
+Find info about the packege that is installed by brew:
+brew info package_name@version
+
+Python:
+pyenv (different version per env): 
+brew install pyenv
+
+You might need to edit your ~/.zshrc, ~/.bashrc etc. and append the following content to it:
+eval "$(pyenv init -)"
+
+or maybe ~/.bash_profile when you have:
+if [ -f ~/.bash_profile ]; then
+    . ~/.bash_profile;
+fi
+then execute:
+source ~/.bash_profile
+
+pyenv install -l 
+pyenv install --list 
+pyenv install --list | grep "3.10\."
+pyenv install 3.10.6
+pyenv install -v 3.10.6
+pyenv versions
+
+brew:
+brew install python@verison
+pipenv (different dependencies per env): 
+pip3 install pipenv
+pipenv install package_name
+
+Java:
+jenv:
