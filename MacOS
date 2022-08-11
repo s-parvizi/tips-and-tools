@@ -26,7 +26,7 @@ Find info about the packege that is installed by brew:
 brew info package_name@version
 
 Python:
-pyenv (different version per env): 
+pyenv (different python version per env): 
 brew install pyenv
 
 You might need to edit your ~/.zshrc, ~/.bashrc etc. and append the following content to it:
@@ -42,9 +42,9 @@ source ~/.bash_profile
 pyenv install -l 
 pyenv install --list 
 pyenv install --list | grep "3.10\."
-pyenv install 3.10.6
 pyenv install -v 3.10.6
 pyenv versions
+pyenv local 3.10.6
 
 brew:
 brew install python@verison
