@@ -1,11 +1,14 @@
 Who is listening on a given TCP port on Mac OS X:
 lsof -nP -iTCP:$PORT | grep LISTEN
 
+
 Find files:
 find /path -name abc.dmg
 
+
 Search text inside files:
 grep -r 'text goes here' path_goes_here
+
 
 Set default Java:
 # which java versions installed
@@ -13,17 +16,22 @@ $ /usr/libexec/java_home -V
 # set the new default version
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_222`
 
+
 Copy file content to clipboard:
 cat FileName | pbcopy
+
 
 List of all users:
 dscacheutil -q user | grep -A 3 -B 2 -e uid:\ 5'[0-9][0-9]'
 
+
 Which shell my terminal is using:
 echo $0
 
+
 Find info about the packege that is installed by brew:
 brew info package_name@version
+
 
 Python:
 pyenv (different python version per env): 
@@ -50,7 +58,22 @@ brew:
 brew install python@verison
 pipenv (different dependencies per env): 
 pip3 install pipenv
+pipenv --venv (show current envs)
 pipenv install package_name
+pipenv --rm (remove env)
+pipenv shell
+pip freeze
+pipenv lock -r > requirements.txt
+pipenv install
+pipenv install --ignore-pipfile
+
 
 Java:
 jenv:
+
+
+Brew:
+brew ls -lt
+brew uninstall --ignore-dependencie $(brew ls -lt | grep "Aug 10" | grep -oE '[^ ]+$')
+
+
