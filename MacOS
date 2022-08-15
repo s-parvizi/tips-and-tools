@@ -32,6 +32,7 @@ echo $0
 Find info about the packege that is installed by brew:
 brew info package_name@version
 
+========================================================================================
 
 Python:
 pyenv (different python version per env): 
@@ -67,10 +68,12 @@ pipenv lock -r > requirements.txt
 pipenv install
 pipenv install --ignore-pipfile
 
+========================================================================================
 
 Java:
 jenv:
 
+========================================================================================
 
 Brew:
 brew ls -lt
