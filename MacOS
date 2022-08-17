@@ -73,6 +73,39 @@ pipenv install --ignore-pipfile
 Java:
 jenv:
 
+// download reposiitory for openjdk
+brew tap adoptopenjdk/openjdk
+
+// install idk 8 and 11
+brew install --cask adoptopenjdk8 adoptopenjdk11
+
+// download utility jenv
+brew install jenv
+
+// add these two commands in zshrc or .bash_profile
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+// add java versions to jenv
+jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+
+// check versions
+jenv versions
+
+// set java verion you desire
+jenv local 1.8
+java -verision
+
+jenv local 11
+java -version
+
+// to enable java to maven
+jenv enable-plugin maven
+jenv enable-plugin export
+
+echo $JAVA_HOME
+
 ========================================================================================
 
 Brew:
