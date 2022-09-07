@@ -32,6 +32,10 @@ echo $0
 Find info about the packege that is installed by brew:
 brew info package_name@version
 
+
+Generate uuid and copy to clipboard:
+uuidgen | tr -d - | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpaste && echo
+
 ========================================================================================
 
 Python:
