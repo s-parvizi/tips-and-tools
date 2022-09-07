@@ -36,6 +36,9 @@ brew info package_name@version
 Generate uuid and copy to clipboard:
 uuidgen | tr -d - | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpaste && echo
 
+Find number of lines in a file:
+wc -l filename     
+
 ========================================================================================
 
 Python:
