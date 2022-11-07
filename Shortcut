@@ -30,6 +30,7 @@ fn + Right Arrow - end of line
 fn + CND + Right Arrow - end of file
 fn + Left Arrow - start of line
 fn + CND + Left Arrow - start of file
+shift + fn + delete - Delete some remembered text from Browser TextBox
 
 Intellij Shortcuts:
 ========================================================================================
