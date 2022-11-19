@@ -39,10 +39,13 @@ uuidgen | tr -d - | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpaste
 Find number of lines in a file:
 wc -l filename     
 
-Change date to all files
+Change date modified to all files
 find ./folder_name/ -type f -exec touch -mt 202211191100 {} \;
-Change date to all files and folders
+Change date modified to all files and folders
 find ./folder_name/ -exec touch -mt 202211191100 {} \;
+
+Change date created to all files and folders
+find ./folder_name/ -exec SetFile -d '11/19/2022 11:00:00' {} \;
 
 ========================================================================================
 
