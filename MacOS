@@ -68,6 +68,9 @@ find ./folder_name/ -exec touch -mt 202211191100 {} \;
 Change date created to all files and folders
 find ./folder_name/ -exec SetFile -d '11/19/2022 11:00:00' {} \;
 
+Find all sudoers:
+sudo cat /etc/sudoers.d/sudoers
+
 ========================================================================================
 
 Python:
