@@ -1,3 +1,24 @@
+Command Helper:
+
+man (command)
+Display the manual page for (command). eg: man lsof
+
+whatis (command)
+Display a one line brief summary of specified command. eg: whatis lsof
+
+(command) --help
+Display command usage information including available flags and proper syntax. eg: lsof –help
+apropos (string)
+Searches the whatis database for (string), helpful in finding commands. eg: apropos ssh
+
+(command)+tab key
+Begin typing a command, and hit the tab key to autocomplete, or to list available commands that start with the typed prefix.
+
+https://github.com/tldr-pages/tldr
+https://github.com/dbrgn/tealdeer (very fast)
+
+========================================================================================
+
 Who is listening on a given TCP port on Mac OS X:
 lsof -nP -iTCP:$PORT | grep LISTEN
 
