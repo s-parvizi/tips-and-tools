@@ -148,6 +148,25 @@ echo $JAVA_HOME
 ========================================================================================
 
 Node:
+nvvm:
+
+brew update
+brew install nvm
+mkdir ~/.nvm
+
+echo "export NVM_DIR=~/.nvm\nsource \$(brew --prefix nvm)/nvm.sh" >> .zshrc
+source ~/.zshrc
+
+nvm install 19.3.0
+install latest:
+nvm install --lts
+
+To see witch version you have on your system you can use: nvm ls
+If you want to change your nvm version you can use: nvm use (node version)
+
+to shpw node and npm and other libraries versions together: npm version
+
+========================================================================================
 
 npm list -g --depth=0
 
