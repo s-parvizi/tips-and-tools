@@ -116,12 +116,13 @@ jenv:
 brew tap adoptopenjdk/openjdk
 
 // install idk 8 and 11
+(on Apple M chips you need to first install: sudo softwareupdate --install-rosetta)
 brew install --cask adoptopenjdk8 adoptopenjdk11
 
 // download utility jenv
 brew install jenv
 
-// add these two commands in zshrc or .bash_profile
+// add these two commands in .zshrc or .bash_profile
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
