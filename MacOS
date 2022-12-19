@@ -137,7 +137,11 @@ jenv versions
 jenv local 1.8
 java -verision
 
+A local JDK is a JDK that is configured for a specific folder only. If we type java into the command line in this folder, it will not use the global JDK, but the local JDK instead.
+The global JDK is the JDK that will be used if we type java into the command line anywhere on our computer.
+
 jenv local 11
+jenv global 11
 java -version
 
 // to enable java to maven
