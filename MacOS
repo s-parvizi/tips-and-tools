@@ -184,6 +184,8 @@ list -g: display a tree of every package found in the user’s folders (without 
 Brew:
 brew ls -lt
 brew uninstall --ignore-dependencie $(brew ls -lt | grep "Aug 10" | grep -oE '[^ ]+$')
-brew tap
+brew tap (without arguments lists all currently tapped repositories)
+brew info maven
+brew list maven
 
 
