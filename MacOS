@@ -185,7 +185,8 @@ Brew:
 brew ls -lt
 brew uninstall --ignore-dependencie $(brew ls -lt | grep "Aug 10" | grep -oE '[^ ]+$')
 brew tap (without arguments lists all currently tapped repositories)
-brew info maven
-brew list maven
 
+brew list: will show you the list of installed packages
+brew search <search term>: will list the possible packages that you can install
+brew info: List versions, caveats, etc
 
