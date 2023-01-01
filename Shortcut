@@ -54,3 +54,20 @@ Ctrl + Shift + Space
 
 For MacOS:
 Shift ⇧ + Cmd ⌘ + Space
+
+
+Duplicate Line:
+Shift + Alt + Down Arrow Key
+
+Rename:
+F2
+
+Refactoring:
+Ctrl + Shift + R
+
+Mark Similar Step by Step:
+Cmd ⌘ + D
+Mark All Similars:
+Cmd ⌘ + Shift ⇧ + L
+
+
