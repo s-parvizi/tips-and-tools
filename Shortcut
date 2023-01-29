@@ -52,7 +52,7 @@ Parameter Hints:
 For Windows and Linux:
 Ctrl + Shift + Space
 
-For MacOS:
+For macOS:
 Shift ⇧ + Cmd ⌘ + Space
 
 
@@ -70,4 +70,7 @@ Cmd ⌘ + D
 Mark All Similars:
 Cmd ⌘ + Shift ⇧ + L
 
+Expand selection to the entire block:
+For macOS:
+Ctrl + Shift + →
 
