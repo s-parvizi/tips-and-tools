@@ -74,3 +74,5 @@ Expand selection to the entire block:
 For macOS:
 Ctrl + Shift + →
 
+Goto the beginning and end of the file:
+ctrl + home ( ⌘ + up ) and ctrl + end ( ⌘ + down ) respectively
