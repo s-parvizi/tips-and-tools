@@ -117,7 +117,7 @@ brew tap adoptopenjdk/openjdk
 
 // install idk 8 and 11
 (on Apple M chips you need to first install: sudo softwareupdate --install-rosetta)
-brew install --cask adoptopenjdk8 adoptopenjdk11
+brew install --cask adoptopenjdk8 adoptopenjdk11 adoptopenjdk16
 
 // download utility jenv
 brew install jenv
@@ -129,6 +129,7 @@ eval "$(jenv init -)"
 // add java versions to jenv
 jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
 jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-16.jdk/Contents/Home
 
 // check versions
 jenv versions
