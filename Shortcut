@@ -76,3 +76,8 @@ Ctrl + Shift + →
 
 Goto the beginning and end of the file:
 ctrl + home ( ⌘ + up ) and ctrl + end ( ⌘ + down ) respectively
+
+go back to a previous change in VS Code:
+Windows use Alt + ← for backward, and Alt + → for forward navigation.
+macOS use Ctrl + - for backward, and Ctrl + Shift + - for forward navigation.
+Linux use Ctrl + Alt + - for backward, and Ctrl + Shift + - for forward navigation.
