@@ -4,3 +4,6 @@ git log --oneline --all --graph
 Git update:
 git fetch and then git merge, or git pull --no-rebase
 git fetch and then git rebase, or git pull --rebase
+
+Discard changes made to the files in the current working directory and revert them back to the last committed state:
+git checkout .
