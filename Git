@@ -5,5 +5,8 @@ Git update:
 git fetch and then git merge, or git pull --no-rebase
 git fetch and then git rebase, or git pull --rebase
 
+if you want to add your changes on the feature branch to the top of changes that you get from master after upating master:
+run 'git rebase master' on feature branch so your changes will be added to the top of changes from master and you know about the possible conflicts
+
 Discard changes made to the files in the current working directory and revert them back to the last committed state:
 git checkout .
