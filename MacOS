@@ -112,12 +112,26 @@ pipenv install --ignore-pipfile
 Java:
 jenv:
 
+////////////////////////////////////////////////////////////////////////////////////////
+Temurin is the official successor to this software:
+
+    brew install --cask temurin
+
+adoptopenjdk has been officially discontinued upstream.
+It may stop working correctly (or at all) in recent versions of macOS.
+
 // download reposiitory for openjdk
 brew tap adoptopenjdk/openjdk
 
-// install idk 8 and 11
+// install jdk 8, 11 and 16
 (on Apple M chips you need to first install: sudo softwareupdate --install-rosetta)
 brew install --cask adoptopenjdk8 adoptopenjdk11 adoptopenjdk16
+////////////////////////////////////////////////////////////////////////////////////////
+
+// install jdk 8, 11 and 17
+brew tap homebrew/cask-versions
+brew install --cask temurin8 temurin11 temurin17
+
 
 // download utility jenv
 brew install jenv
@@ -127,9 +141,9 @@ export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
 // add java versions to jenv
-jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
-jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
-jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-16.jdk/Contents/Home
+jenv add /Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home
+jenv add /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home
+jenv add /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
 
 // check versions
 jenv versions
