@@ -177,17 +177,18 @@ mkdir ~/.nvm
 echo "export NVM_DIR=~/.nvm\nsource \$(brew --prefix nvm)/nvm.sh" >> .zshrc
 source ~/.zshrc
 
+install a specific version:
 nvm install 19.3.0
 install latest:
 nvm install --lts
 
-To see witch version you have on your system you can use: nvm ls
+To see which version you have on your system you can use: nvm ls
 If you want to change your nvm version you can use: nvm use (node version)
 
 set the default version:
 nvm alias default (node version)
 
-to shpw node and npm and other libraries versions together: npm version
+to show node and npm and other libraries versions together: npm version
 
 ========================================================================================
 
