@@ -72,7 +72,7 @@ Find all sudoers:
 sudo cat /etc/sudoers.d/sudoers
 
 Create a password for a zip file:
-zip -er filename.zip
+zip -er filename.zip (folder or file address)
 
 ========================================================================================
 
