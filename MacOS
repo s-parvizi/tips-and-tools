@@ -71,6 +71,9 @@ find ./folder_name/ -exec SetFile -d '11/19/2022 11:00:00' {} \;
 Find all sudoers:
 sudo cat /etc/sudoers.d/sudoers
 
+Create a password for a zip file:
+zip -er filename.zip
+
 ========================================================================================
 
 Python:
