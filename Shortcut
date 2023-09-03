@@ -27,9 +27,9 @@ CTRL + CMD + D — Dictionary
 CMD + TAB / CMD + SHIFT + TAB - forward and backward through your open applications
 CMD + ~ - Shift between different instances of one app
 fn + Right Arrow - end of line
-fn + CND + Right Arrow - end of file
+fn + CMD + Right Arrow - end of file
 fn + Left Arrow - start of line
-fn + CND + Left Arrow - start of file
+fn + CMD + Left Arrow - start of file
 shift + fn + delete - Delete some remembered text from Browser TextBox
 
 Intellij Shortcuts:
