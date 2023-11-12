@@ -1,1 +1,13 @@
+find maven effective settings:
+mvn help:effective-settings
+
+SDKMAN!
+https://sdkman.io/sdks
+
+Java:
+sdk list java
+sdk install java 8.0.252-zulu
+
+Maven:
+sdk install maven
 
