@@ -1,6 +1,9 @@
 find maven effective settings:
 mvn help:effective-settings
 
+find maven path:
+whereis mvn
+
 SDKMAN!
 https://sdkman.io/sdks
 
