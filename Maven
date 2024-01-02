@@ -1,0 +1,5 @@
+To find dependency conflicts:
+mvn dependency:tree -Dverbose
+
+To find duplicate classes:
+mvn dependency:analyze-duplicate
