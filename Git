@@ -39,5 +39,8 @@ Yet another way to revert all uncommitted changes (longer to type, but works fro
 
 git reset --hard HEAD
 
+git fetch --all: Fetches all branches from all remotes. It's a safe way to update your local view of the remotes without changing your local branches.
+
+
 
 
