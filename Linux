@@ -1,3 +1,6 @@
+Kill a process:
+kill -9 $(ps aux | grep intellij | awk '{print $2}')
+
 find maven effective settings:
 mvn help:effective-settings
 
