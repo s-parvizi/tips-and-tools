@@ -34,6 +34,9 @@ This will revert all local uncommitted changes (should be executed in repo root)
 git checkout .
 You can also revert uncommitted changes only to particular file or directory:
 
+git checkout -
+return to the previous branch
+
 git checkout [some_dir|file.txt]
 Yet another way to revert all uncommitted changes (longer to type, but works from any subdirectory):
 
