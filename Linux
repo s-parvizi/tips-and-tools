@@ -10,6 +10,9 @@ mvn help:effective-settings
 find maven path:
 whereis mvn
 
+SNAP
+https://snapcraft.io/docs/installing-snap-on-ubuntu
+
 SDKMAN!
 https://sdkman.io/sdks
 
@@ -19,4 +22,5 @@ sdk install java 8.0.252-zulu
 
 Maven:
 sdk install maven
+
 
