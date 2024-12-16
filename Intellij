@@ -5,3 +5,8 @@ and that's it!
 
 Better way:
 ctrl + shift + A -> in actions search for "Reload All Maven Projects"
+
+Tip:
+When dependencies are not updated successfully in IntelliJ, especially on Linux, delete the local maven repository or run the following command:
+rm -rf ~/.m2/repository
+
