@@ -10,3 +10,19 @@ Tip:
 When dependencies are not updated successfully in IntelliJ, especially on Linux, delete the local maven repository or run the following command:
 rm -rf ~/.m2/repository
 
+for big maven project, optimize the 'VM options for importer':
+-Xms4g
+-Xmx16g
+-XX:MaxPermSize=512m
+-ea
+-server
+-XX:+DoEscapeAnalysis
+-XX:+UseCompressedOops
+-XX:+UnlockExperimentalVMOptions
+-XX:+UseG1GC
+-XX:InitiatingHeapOccupancyPercent=35
+-XX:+ParallelRefProcEnabled
+-XX:ReservedCodeCacheSize=512m
+-XX:+UseCodeCacheFlushing
+-Dsun.io.useCanonCaches=false
+-Dfile.encoding=UTF-8
