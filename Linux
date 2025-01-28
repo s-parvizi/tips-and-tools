@@ -7,6 +7,18 @@ kill -9 $(ps aux | grep -- '--remote-debugging-port' | awk '{print $2}')
 find listening port:
 lsof -i :9515
 
+Run the script with debugging enabled to track its behavior:
+bash -x yourscript.sh
+
+Monitor the Java application's process tree to see if child threads or processes linger:
+pstree -p <java_pid>
+
+Use strace to observe system calls when closing the console to identify hanging points:
+strace -p <java_pid>
+
+To verify which signals the application receives, you can monitor the process using strace:
+strace -p <java_pid> -e signal
+
 find maven effective settings:
 mvn help:effective-settings
 
