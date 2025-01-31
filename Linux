@@ -34,6 +34,7 @@ https://sdkman.io/sdks
 Java:
 sdk list java
 sdk install java 8.0.252-zulu
+sdk default java 17.0.8-tem
 
 Maven:
 sdk install maven
