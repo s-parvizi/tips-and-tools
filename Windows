@@ -1,0 +1,2 @@
+kill a procees:
+taskkill /IM processname.exe /F
