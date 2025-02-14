@@ -19,6 +19,10 @@ strace -p <java_pid>
 To verify which signals the application receives, you can monitor the process using strace:
 strace -p <java_pid> -e signal
 
+List services run on Linux startup and remove them:
+ls ~/.config/autostart/
+rm ~/.config/autostart/<program>.desktop
+
 find maven effective settings:
 mvn help:effective-settings
 
@@ -38,10 +42,5 @@ sdk default java 17.0.8-tem
 
 Maven:
 sdk install maven
-
-List services run on Linux startup and remove them:
-ls ~/.config/autostart/
-rm ~/.config/autostart/<program>.desktop
-
 
 
