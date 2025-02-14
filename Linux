@@ -39,4 +39,9 @@ sdk default java 17.0.8-tem
 Maven:
 sdk install maven
 
+List services run on Linux startup and remove them:
+ls ~/.config/autostart/
+rm ~/.config/autostart/<program>.desktop
+
+
 
