@@ -23,6 +23,12 @@ List services run on Linux startup and remove them:
 ls ~/.config/autostart/
 rm ~/.config/autostart/<program>.desktop
 
+If you installed a software via Snap in Linux you can disable update easily:
+Example:
+if you installed code via Snap: snap install code --classic
+you can disable automatic updates by running: sudo snap refresh --hold code
+To re-enable updates later: sudo snap refresh --unhold code
+
 find maven effective settings:
 mvn help:effective-settings
 
