@@ -1,10 +1,10 @@
 Kill a process:
 kill -9 $(ps aux | grep intellij | awk '{print $2}')
 
-the most important case for killing Javascript debugging sessions:
+The most important case for killing Javascript debugging sessions:
 kill -9 $(ps aux | grep -- '--remote-debugging-port' | awk '{print $2}')
 
-find listening port:
+Find listening port:
 lsof -i :9515
 
 Run the script with debugging enabled to track its behavior:
@@ -23,13 +23,13 @@ List services run on Linux startup and remove them:
 ls ~/.config/autostart/
 rm ~/.config/autostart/<program>.desktop
 
-If you installed a software via Snap in Linux you can disable update easily:
+If you installed software via Snap in Linux, you can disable updates easily:
 Example:
 if you installed code via Snap: snap install code --classic
-you can disable automatic updates by running: sudo snap refresh --hold code
+You can disable automatic updates by running: sudo snap refresh --hold code
 To re-enable updates later: sudo snap refresh --unhold code
 
-find maven effective settings:
+Find maven effective settings:
 mvn help:effective-settings
 
 find maven path:
