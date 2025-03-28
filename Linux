@@ -49,4 +49,21 @@ sdk default java 17.0.8-tem
 Maven:
 sdk install maven
 
+Linux Display Mode (XWayland-X11 or Wayland):
+Use Wayland for Java applications:
+1. nano ~/.profile
+2. 
+if command -v java >/dev/null 2>&1; then
+  export GDK_BACKEND=x11
+fi
+3. source ~/.profile
+
+Use X11 for specific applications:
+GDK_BACKEND=x11 java -jar MySwingApp.jar
+or
+GDK_BACKEND=x11 ./eclipse
+
+
+
+
 
