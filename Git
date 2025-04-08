@@ -44,6 +44,21 @@ git reset --hard HEAD
 
 git fetch --all: Fetches all branches from all remotes. It's a safe way to update your local view of the remotes without changing your local branches.
 
+Squash two commits locally and remotely:
+1. git rebase -i HEAD~2
+2. 
+edit: 
+pick 123abc Fix pipeline error
+pick 456def Minor fix for pipeline
+to:
+pick 123abc Fix pipeline error
+squash 456def Minor fix for pipeline
+3. 
+git push --force
+or 
+git push --force origin your-branch-name
+
+
 
 
 
