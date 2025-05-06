@@ -3,3 +3,9 @@ mvn dependency:tree -Dverbose
 
 To find duplicate classes:
 mvn dependency:analyze-duplicate
+
+Find the dependency tree for a dependency:
+dependency:tree -Dverbose | grep mod-config -B 5 -A 5
+
+Find where the dependency comes from:
+dependency:tree -Dincludes=com.test:mod-config -Dverbose
