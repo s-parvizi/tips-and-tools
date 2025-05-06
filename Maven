@@ -8,4 +8,4 @@ Find the dependency tree for a dependency:
 dependency:tree -Dverbose | grep mod-config -B 5 -A 5
 
 Find where the dependency comes from:
-dependency:tree -Dincludes=com.test:mod-config -Dverbose
+dependency:tree -Dincludes=com.test:mod-config 
