@@ -9,7 +9,7 @@ dependency:tree -Dverbose | grep mod-config -B 5 -A 5
 
 Find where the dependency comes from:
 dependency:tree -Dincludes=com.test:mod-config
-dependency:tree -Dincludes=com.test:mod-config, org.test:mod-config
+dependency:tree -Dincludes=com.test:mod-config,org.test:mod-config
 
 Find dependencies tree for a specific scope:
 mvn dependency:tree -Dscope=test | grep jakarta
