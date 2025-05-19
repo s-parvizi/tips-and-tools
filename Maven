@@ -17,3 +17,7 @@ mvn dependency:tree -Dscope=test | grep jakarta
 jdeps and jar tf:
 jar tf: Use to confirm what classes are inside a jar — especially when looking for duplicated class files.
 jdeps: Use to confirm whether a jar depends on a certain package — useful for validating whether removing/excluding something is safe.
+
+Find unused dependencies:
+mvn dependency:analyze
+
