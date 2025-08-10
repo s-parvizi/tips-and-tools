@@ -21,3 +21,8 @@ jdeps: Use to confirm whether a jar depends on a certain package — useful for 
 Find unused dependencies:
 mvn dependency:analyze
 
+Check for a package in a jar file: 
+jar tf target/*.jar | grep '^com/google/protobuf' | head
+
+
+
